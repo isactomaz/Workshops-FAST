@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "workshops-fast"
+version = "0.1.0"
+description = ""
+authors = ["Isac Tomaz da Silva <isactomaz@protonmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+flake8 = "^5.0.4"
+flake8-docstrings = "^1.6.0"
+pytest = "^7.1.2"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
